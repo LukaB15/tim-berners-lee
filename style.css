@@ -1,0 +1,307 @@
+p,h1,h2,h3,a{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    display:flex;
+    align-items: center;
+    background-color: #EBEBEB;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: white;
+    padding-top: 20px;
+    border-radius: 2%;
+    padding-bottom: 50px;
+    width: 45em;
+}
+header h1{
+    text-align: center;
+    color:red;
+    font-weight: bolder;
+}
+header h2{
+    text-align: center;
+}
+header p{
+    text-align: center;
+    text-align: start;
+    padding-left: 20px;
+    padding-right: 20px;
+    word-spacing: 1px;
+    line-height: 30px;
+    
+    
+}
+header figure img{
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid grey;
+   
+}
+header a{ 
+    text-align: center;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+}
+header a:hover{ 
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: red;
+    border:1px solid red;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+}
+
+.social-network{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;  
+    width:45em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+    width:45em;
+    justify-content: center;
+    
+}
+.social-network .list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+.social-network .list a{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+.social-network ul{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    
+}
+.social-network li{
+    display: inline;
+  
+}
+.social-network li a{
+    text-decoration: none;
+    color:lightgrey;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.social-network li i{
+    text-decoration: none;
+    color:lightgrey;
+    font-size: 40px;
+}
+.fav-movies{
+    background-color: white;
+    width:45em;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    
+    
+}
+.fav-movies h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.fav-movies h2 i{
+    font-style: normal;
+    background-color: lightgrey;
+}
+.movies{
+    display: flex;
+    flex-direction: column;
+   
+}
+.movies h2{
+    text-align: center;
+    padding-top: 30px;
+}
+.movies .space-odyssey {
+    display: flex;
+    flex-direction: row;
+    
+}
+.movies .space-odyssey .image-odyssey {
+    margin-left: 30px;
+    
+}
+
+.movies .space-odyssey h3{
+    width: 20em;
+    margin-left: 10px;
+    text-align: center;
+}
+.movies .space-odyssey p{
+    margin-left: 10px;
+    font-size: 20px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+
+
+.movies .monsieur-hulot {
+    display: flex;
+    flex: row;
+    margin-top: 30px;
+    
+}
+.movies  .monsieur-hulot .image-hulot {
+    margin-left: 30px;
+    
+}
+
+.movies  .monsieur-hulot h3{
+    width: 20em;
+    margin-left: 10px;
+    text-align: center;
+}
+.movies  .monsieur-hulot p{
+    margin-left: 10px;
+    font-size: 20px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.movies .alien {
+    display: flex;
+    flex: row;
+    margin-top: 30px;
+}
+.movies  .alien .image-alien {
+    margin-left: 30px;
+    
+}
+
+.movies  .alien h3{
+    width: 20em;
+    margin-left: 10px;
+    text-align: center;
+}
+.movies  .alien p{
+    margin-left: 10px;
+    font-size: 20px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+@media only screen and (max-width:1000px) {
+    header {
+      width:30em;
+    }
+    .social-network{
+        width:30em;
+    }
+    .fav-movies{
+        width:30em;
+    }
+    .movies{
+        width: 30em;
+    }
+    .movies .space-odyssey {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .movies .monsieur-hulot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .movies .alien {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+  }
+  @media only screen and (max-width:600px) {
+    header {
+      width:20em;
+    }
+    .social-network{
+        width:20em;
+    }
+    .fav-movies{
+        width:20em;
+    }
+    .movies{
+        width: 20em;
+    }
+    .movies .space-odyssey {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .movies .space-odyssey .desc-odyssey {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .movies .space-odyssey p {
+       width: 15em;
+        
+    }
+
+    .movies .monsieur-hulot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .movies .monsieur-hulot .desc-hulot {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .movies .monsieur-hulot p {
+       width: 15em;
+        
+    }
+    .movies .alien {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .movies .alien .desc-alien {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .movies .alien p {
+       width: 15em;
+        
+    }
+    
+  }
